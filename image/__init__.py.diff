@@ -1,0 +1,10 @@
+--- __init__.py	2016-04-07 13:03:24.070329932 +0900
++++ __init__.docker.py	2016-04-29 15:53:14.593951810 +0900
+@@ -1,6 +1,6 @@
+ # -*- coding: UTF-8 -*-
+ 
+ AVAILABLE_DEVICES = ['full', 'null', 'random', 'stderr', 'stdin', 'stdout', 'urandom', 'zero']
+-CGROUP_SUBSETS = ['cpuacct', 'memory']
++CGROUP_SUBSETS = ['cpu,cpuacct', 'memory']
+ AVAILABLE_PATHS = ['/bin', '/etc', '/lib', '/lib64', '/proc', '/sbin', '/usr/bin', '/usr/include', '/usr/lib', '/var/lib']
+ SYSCTL_PARAMS = ['kernel.sem=0 0 0 0', 'kernel.shmall=0', 'kernel.shmmax=0', 'kernel.shmmni=0', 'kernel.msgmax=0', 'kernel.msgmnb=0', 'kernel.msgmni=0', 'fs.mqueue.queues_max=0']
